@@ -1,0 +1,247 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-02T19:30:05.680Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 9,
+    "implemented": 9,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Implement a global black and red dark theme with an aggressive esports visual style. Use deep black (#0a0a0a, #111111) as background, crimson red (#cc0000, #ff1a1a) as primary accent, and white/light grey for text. Apply sharp geometric design elements, glitch-style or diagonal cut effects on section dividers, and consistent typography using a bold, modern sans-serif font (e.g., Rajdhani or Barlow Condensed via Google Fonts). Animated transitions should be present on scroll-reveal and hover states throughout the site.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/SectionDivider.tsx",
+          "frontend/src/hooks/useScrollReveal.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/SectionDivider.tsx",
+          "frontend/src/hooks/useScrollReveal.ts"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Build a full-page Hero section at the top of the site. Display the clan name 'LAW HQ' in large, bold lettering with a glowing red effect. Include a tagline such as 'Loyalty. Ambition. Winning.' and a prominent CTA button labeled 'Join the Clan' that scrolls to the Join section. The background should feature a dark, high-contrast esports visual (use a generated background image). Include animated entrance text.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Build an 'About Us' section with the following copy: 'LAW HQ is an official esports clan built on loyalty, ambition, and winning mentality. We focus on developing talented players, creating opportunities, and building a respected name in the esports scene. We are an upcoming clan with big goals and strong leadership guiding us to success.' Style with a dark card or full-width panel, red accent border or underline on the section heading, and scroll-reveal animation.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/AboutUs.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/AboutUs.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Build a 'Leadership Team' section displaying two leader cards: (1) LAW EnergeT1cc — Founder of LAW HQ: 'The visionary behind the clan, responsible for building the foundation and leading the organization toward competitive success.' (2) LAW KrmFv! — Presidential Board: 'Oversees clan operations, strategic growth, recruitment decisions, and ensures LAW HQ maintains professionalism and excellence.' Each card should have a dark background, red accent border, a placeholder avatar icon, the player tag, title, and description. Cards should appear side by side on desktop and stack on mobile.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/LeadershipTeam.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/LeadershipTeam.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Build an 'Our Mission' section with the copy: 'To recruit upcoming talented players, compete at the highest level, build a strong esports brand, and create a supportive but competitive environment.' Follow it with a 'What We Offer' section listing the five offerings as styled feature cards or icon list items: Competitive tournament participation, Skilled and dedicated teammates, Professional leadership, Structured growth opportunities, Positive and active community. Use red icons or bullet markers.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/MissionAndOffers.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/MissionAndOffers.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Build a 'Join LAW HQ' section with the heading 'We Are Recruiting' and the copy: 'We are currently recruiting upcoming skilled players who are passionate about esports and ready to improve, compete, and represent LAW HQ with pride.' Include a prominent red CTA button labeled 'Apply Now' that links to the Discord invite https://discord.gg/WRadjbztnW. Style the section with an aggressive, high-contrast background treatment (dark overlay, red accent glow or border frame).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/JoinClan.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/JoinClan.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Build a dedicated 'Discord' section with: (1) A large 'Join Our Discord' button linking to https://discord.gg/WRadjbztnW that opens in a new tab. (2) A description: 'Stay connected with our active community — join chats, scrims, announcements, and tryouts all in one place.' (3) A roles system explanation listing three roles: Members (general community), Competitive Team (active roster players), and Staff (clan leadership and moderators). (4) A static member count badge displaying '350+ Members'. (5) Placeholder social media icon links for Twitter/X, YouTube, Instagram, and TikTok, each opening to '#' until updated.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Discord.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Discord.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Build a sticky top navigation bar with the LAW HQ logo/wordmark on the left and anchor links to each section (Home, About, Leadership, Mission, Join, Discord) on the right. The nav should be transparent over the hero and turn solid dark on scroll. Include a mobile hamburger menu for smaller screens.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Build a footer with the LAW HQ name, a short tagline ('Loyalty. Ambition. Winning.'), the same placeholder social media icon links as the Discord section, and a copyright line: '© 2025 LAW HQ. All rights reserved.' Style consistently with the site's black and red theme.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/hero-bg.dim_1920x1080.png",
+    "frontend/public/assets/generated/law-hq-logo.dim_400x400.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/AboutUs.tsx",
+    "frontend/src/components/Discord.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/JoinClan.tsx",
+    "frontend/src/components/LeadershipTeam.tsx",
+    "frontend/src/components/MissionAndOffers.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/SectionDivider.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/hooks/useScrollReveal.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-02T19:30:05.677Z",
+  "summary": "The diff implements nearly all required sections and features for the LAW HQ esports website. All major REQs (1-9) appear to be addressed: global dark/red theme, hero, about, leadership, mission/offers, join, discord, navigation, and footer. Minor concerns exist around the copyright line (dynamic year vs. static '© 2025') and a caffeine.ai attribution added to the footer that was not requested. The core content, links, and structure all appear to match the spec.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Caffeine.ai attribution added to the footer with UTM tracking parameters",
+      "reason": "The build request specifies the footer should contain only: LAW HQ name, tagline, placeholder social media icons, and copyright line '© 2025 LAW HQ. All rights reserved.' No third-party attribution was requested.",
+      "evidence": [
+        "frontend/src/components/Footer.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Dynamic copyright year in footer using JavaScript rather than static '© 2025'",
+      "reason": "The spec explicitly requires the copyright line to read '© 2025 LAW HQ. All rights reserved.' — a static string. The footer summary references a 'dynamic copyright year', which deviates from the exact required text.",
+      "evidence": [
+        "frontend/src/components/Footer.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "InternetIdentityProvider and useInternetIdentity hook wired into the app's main entry point",
+      "reason": "The build request explicitly states 'No user authentication or login system' is required. While these hooks may be scaffolding, wrapping the entire app in InternetIdentityProvider goes beyond the stated non-goals.",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts"
+      ]
+    },
+    {
+      "description": "'Join Discord' CTA button added directly in the desktop navigation bar",
+      "reason": "REQ-8 specifies the nav should contain the LAW HQ logo/wordmark on the left and anchor links (Home, About, Leadership, Mission, Join, Discord) on the right. No additional Discord CTA button in the navbar was requested.",
+      "evidence": [
+        "frontend/src/components/Navigation.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.82,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/AboutUs.tsx",
+    "frontend/src/components/Discord.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/JoinClan.tsx",
+    "frontend/src/components/LeadershipTeam.tsx",
+    "frontend/src/components/MissionAndOffers.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/SectionDivider.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/hooks/useScrollReveal.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

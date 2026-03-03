@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Professional esports website for LAW HQ clan. Black and red dark theme with aggressive esports style. Sections: Hero, About Us, Leadership Team (LAW EnergeT1cc - Founder, LAW KrmFv! - Presidential Board), Mission, What We Offer, Join LAW HQ, and Discord section. Discord invite: discord.gg/WRadjbztnW, 350+ members display, placeholder social media links.",
+  "architectural_notes": [
+    "Black and red dark theme with aggressive esports aesthetic and animated transitions",
+    "Social media links are placeholders to be updated later by the client"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Dark esports hero background with abstract red energy lines, geometric grid, and dramatic lighting on a deep black background (hero-bg.dim_1920x1080.png)\n- LAW HQ clan logo — bold stylized 'LAW' text with a red geometric shield or crown emblem, dark background (law-hq-logo.dim_400x400.png)",
+  "existing_features": [
+    {
+      "id": "feature-implement-a-global-black-and-red-dark-theme-with-an-aggressive-esports-visual-style-use-deep-black-0a0a0a-111111-as-background-crimson-red-cc0000-ff1a1a-as-primary-accent-and-white-light-grey-for-text-apply-sharp-geometric-design-elements-glitch-style-or-diagonal-cut-effects-on-section-dividers-and-consistent-typography-using-a-bold-modern-sans-serif-font-e-g-rajdhani-or-barlow-condensed-via-google-fonts-animated-transitions-should-be-present-on-scroll-reveal-and-hover-states-throughout-the-site",
+      "title": "Implement a global black and red dark theme with an aggressive esports visual style. Use deep black (#0a0a0a, #111111) as background, crimson red (#cc0000, #ff1a1a) as primary accent, and white/light grey for text. Apply sharp geometric design elements, glitch-style or diagonal cut effects on section dividers, and consistent typography using a bold, modern sans-serif font (e.g., Rajdhani or Barlow Condensed via Google Fonts). Animated transitions should be present on scroll-reveal and hover states throughout the site.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-full-page-hero-section-at-the-top-of-the-site-display-the-clan-name-law-hq-in-large-bold-lettering-with-a-glowing-red-effect-include-a-tagline-such-as-loyalty-ambition-winning-and-a-prominent-cta-button-labeled-join-the-clan-that-scrolls-to-the-join-section-the-background-should-feature-a-dark-high-contrast-esports-visual-use-a-generated-background-image-include-animated-entrance-text",
+      "title": "Build a full-page Hero section at the top of the site. Display the clan name 'LAW HQ' in large, bold lettering with a glowing red effect. Include a tagline such as 'Loyalty. Ambition. Winning.' and a prominent CTA button labeled 'Join the Clan' that scrolls to the Join section. The background should feature a dark, high-contrast esports visual (use a generated background image). Include animated entrance text.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-about-us-section-with-the-following-copy-law-hq-is-an-official-esports-clan-built-on-loyalty-ambition-and-winning-mentality-we-focus-on-developing-talented-players-creating-opportunities-and-building-a-respected-name-in-the-esports-scene-we-are-an-upcoming-clan-with-big-goals-and-strong-leadership-guiding-us-to-success-style-with-a-dark-card-or-full-width-panel-red-accent-border-or-underline-on-the-section-heading-and-scroll-reveal-animation",
+      "title": "Build an 'About Us' section with the following copy: 'LAW HQ is an official esports clan built on loyalty, ambition, and winning mentality. We focus on developing talented players, creating opportunities, and building a respected name in the esports scene. We are an upcoming clan with big goals and strong leadership guiding us to success.' Style with a dark card or full-width panel, red accent border or underline on the section heading, and scroll-reveal animation.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-leadership-team-section-displaying-two-leader-cards-1-law-energet1cc-founder-of-law-hq-the-visionary-behind-the-clan-responsible-for-building-the-foundation-and-leading-the-organization-toward-competitive-success-2-law-krmfv-presidential-board-oversees-clan-operations-strategic-growth-recruitment-decisions-and-ensures-law-hq-maintains-professionalism-and-excellence-each-card-should-have-a-dark-background-red-accent-border-a-placeholder-avatar-icon-the-player-tag-title-and-description-cards-should-appear-side-by-side-on-desktop-and-stack-on-mobile",
+      "title": "Build a 'Leadership Team' section displaying two leader cards: (1) LAW EnergeT1cc — Founder of LAW HQ: 'The visionary behind the clan, responsible for building the foundation and leading the organization toward competitive success.' (2) LAW KrmFv! — Presidential Board: 'Oversees clan operations, strategic growth, recruitment decisions, and ensures LAW HQ maintains professionalism and excellence.' Each card should have a dark background, red accent border, a placeholder avatar icon, the player tag, title, and description. Cards should appear side by side on desktop and stack on mobile.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-our-mission-section-with-the-copy-to-recruit-upcoming-talented-players-compete-at-the-highest-level-build-a-strong-esports-brand-and-create-a-supportive-but-competitive-environment-follow-it-with-a-what-we-offer-section-listing-the-five-offerings-as-styled-feature-cards-or-icon-list-items-competitive-tournament-participation-skilled-and-dedicated-teammates-professional-leadership-structured-growth-opportunities-positive-and-active-community-use-red-icons-or-bullet-markers",
+      "title": "Build an 'Our Mission' section with the copy: 'To recruit upcoming talented players, compete at the highest level, build a strong esports brand, and create a supportive but competitive environment.' Follow it with a 'What We Offer' section listing the five offerings as styled feature cards or icon list items: Competitive tournament participation, Skilled and dedicated teammates, Professional leadership, Structured growth opportunities, Positive and active community. Use red icons or bullet markers.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-join-law-hq-section-with-the-heading-we-are-recruiting-and-the-copy-we-are-currently-recruiting-upcoming-skilled-players-who-are-passionate-about-esports-and-ready-to-improve-compete-and-represent-law-hq-with-pride-include-a-prominent-red-cta-button-labeled-apply-now-that-links-to-the-discord-invite-https-discord-gg-wradjbztnw-style-the-section-with-an-aggressive-high-contrast-background-treatment-dark-overlay-red-accent-glow-or-border-frame",
+      "title": "Build a 'Join LAW HQ' section with the heading 'We Are Recruiting' and the copy: 'We are currently recruiting upcoming skilled players who are passionate about esports and ready to improve, compete, and represent LAW HQ with pride.' Include a prominent red CTA button labeled 'Apply Now' that links to the Discord invite https://discord.gg/WRadjbztnW. Style the section with an aggressive, high-contrast background treatment (dark overlay, red accent glow or border frame).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-dedicated-discord-section-with-1-a-large-join-our-discord-button-linking-to-https-discord-gg-wradjbztnw-that-opens-in-a-new-tab-2-a-description-stay-connected-with-our-active-community-join-chats-scrims-announcements-and-tryouts-all-in-one-place-3-a-roles-system-explanation-listing-three-roles-members-general-community-competitive-team-active-roster-players-and-staff-clan-leadership-and-moderators-4-a-static-member-count-badge-displaying-350-members-5-placeholder-social-media-icon-links-for-twitter-x-youtube-instagram-and-tiktok-each-opening-to-until-updated",
+      "title": "Build a dedicated 'Discord' section with: (1) A large 'Join Our Discord' button linking to https://discord.gg/WRadjbztnW that opens in a new tab. (2) A description: 'Stay connected with our active community — join chats, scrims, announcements, and tryouts all in one place.' (3) A roles system explanation listing three roles: Members (general community), Competitive Team (active roster players), and Staff (clan leadership and moderators). (4) A static member count badge displaying '350+ Members'. (5) Placeholder social media icon links for Twitter/X, YouTube, Instagram, and TikTok, each opening to '#' until updated.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-sticky-top-navigation-bar-with-the-law-hq-logo-wordmark-on-the-left-and-anchor-links-to-each-section-home-about-leadership-mission-join-discord-on-the-right-the-nav-should-be-transparent-over-the-hero-and-turn-solid-dark-on-scroll-include-a-mobile-hamburger-menu-for-smaller-screens",
+      "title": "Build a sticky top navigation bar with the LAW HQ logo/wordmark on the left and anchor links to each section (Home, About, Leadership, Mission, Join, Discord) on the right. The nav should be transparent over the hero and turn solid dark on scroll. Include a mobile hamburger menu for smaller screens.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-footer-with-the-law-hq-name-a-short-tagline-loyalty-ambition-winning-the-same-placeholder-social-media-icon-links-as-the-discord-section-and-a-copyright-line-2025-law-hq-all-rights-reserved-style-consistently-with-the-site-s-black-and-red-theme",
+      "title": "Build a footer with the LAW HQ name, a short tagline ('Loyalty. Ambition. Winning.'), the same placeholder social media icon links as the Discord section, and a copyright line: '© 2025 LAW HQ. All rights reserved.' Style consistently with the site's black and red theme.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Hero section with aggressive esports visuals and animated transitions",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "About Us section describing LAW HQ clan mission and values",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Leadership Team section featuring LAW EnergeT1cc (Founder) and LAW KrmFv! (Presidential Board)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Mission and What We Offer sections",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Join LAW HQ recruitment section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Discord section with Join button (discord.gg/WRadjbztnW), 350+ member count, roles explanation, and placeholder social media links",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "LAW HQ Esports Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

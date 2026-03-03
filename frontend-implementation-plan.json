@@ -1,0 +1,218 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "LAW HQ Esports Website — Full Frontend Build",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Implement global black and red dark theme with aggressive esports visual style, geometric design elements, scroll-reveal animations, and bold modern typography",
+      "acceptanceCriteria": [
+        "Global background is deep black with red accent colors applied consistently",
+        "Bold modern font is loaded and applied site-wide",
+        "Scroll-reveal animations are present on section entry",
+        "Hover effects are applied to buttons, cards, and nav links",
+        "Diagonal or geometric section dividers are visible between major sections"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Import Google Fonts (Rajdhani or Barlow Condensed). Define CSS custom properties for deep black backgrounds (#0a0a0a, #111111), crimson red accents (#cc0000, #ff1a1a), and light grey text colors. Set global body and html styles with black background and modern sans-serif font family. Add utility classes for glowing red text effects, hover transitions, and geometric decorative elements."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme with custom colors (deepBlack, crimsonRed, lightGrey) matching the esports palette. Add custom font family configuration for the imported Google Font. Define custom animation keyframes for scroll-reveal fade-in, slide-up, and glitch-style effects. Add transition utilities for smooth hover states."
+        },
+        {
+          "path": "frontend/src/components/SectionDivider.tsx",
+          "operation": "create",
+          "description": "Create a reusable SectionDivider component that renders sharp geometric or diagonal cut divider elements with red accent styling. Support variants for different divider styles (diagonal, zigzag, geometric). Export as a functional component."
+        },
+        {
+          "path": "frontend/src/hooks/useScrollReveal.ts",
+          "operation": "create",
+          "description": "Create a custom React hook that observes elements entering the viewport using IntersectionObserver. Return a ref and visibility state to trigger scroll-reveal animations. Support configurable threshold and root margin options."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build full-page Hero section with LAW HQ branding, glowing red title, tagline, CTA button scrolling to Join section, and animated entrance using generated background image",
+      "acceptanceCriteria": [
+        "Hero section displays 'LAW HQ' with glowing red text effect",
+        "Tagline is visible below the clan name",
+        "'Join the Clan' CTA button scrolls to the Join LAW HQ section",
+        "Background image is dark and esports-themed",
+        "Text animates in on page load"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "create",
+          "description": "Create Hero component displaying 'LAW HQ' in large bold text with glowing red effect using text-shadow CSS. Include tagline 'Loyalty. Ambition. Winning.' below. Add 'Join the Clan' CTA button that scrolls smoothly to the Join section using anchor link or smooth scroll function. Apply background image using frontend/public/assets/generated/hero-bg.dim_1920x1080.png with dark overlay. Implement entrance animations for text elements (fade-in, slide-up) triggered on mount."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Hero component at the top of the main page layout, before other sections. Ensure the component spans full viewport height and integrates with the site's scroll navigation system."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Build About Us section with exact provided copy, dark card styling, red accent heading decoration, and scroll-reveal animation",
+      "acceptanceCriteria": [
+        "About Us section is present with the exact provided copy",
+        "Section heading has red accent decoration",
+        "Section animates in on scroll"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AboutUs.tsx",
+          "operation": "create",
+          "description": "Create AboutUs component with section heading 'About Us' decorated with red underline or border accent. Display the exact copy: 'LAW HQ is an official esports clan built on loyalty, ambition, and winning mentality. We focus on developing talented players, creating opportunities, and building a respected name in the esports scene. We are an upcoming clan with big goals and strong leadership guiding us to success.' Style with dark card or full-width panel background. Use the useScrollReveal hook to trigger fade-in animation when section enters viewport."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render AboutUs component in the main page layout after the Hero section. Add section id 'about' for navigation anchor linking."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build Leadership Team section with two leader cards (LAW EnergeT1cc, LAW KrmFv!) showing avatars, titles, and descriptions in responsive grid layout",
+      "acceptanceCriteria": [
+        "Two leadership cards are displayed with correct names, titles, and descriptions",
+        "Cards are side-by-side on desktop and stacked on mobile",
+        "Each card has a red accent border and placeholder avatar",
+        "Section heading is styled consistently with the rest of the site"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/LeadershipTeam.tsx",
+          "operation": "create",
+          "description": "Create LeadershipTeam component with section heading 'Leadership Team'. Render two leader cards: (1) LAW EnergeT1cc — Founder of LAW HQ: 'The visionary behind the clan, responsible for building the foundation and leading the organization toward competitive success.' (2) LAW KrmFv! — Presidential Board: 'Oversees clan operations, strategic growth, recruitment decisions, and ensures LAW HQ maintains professionalism and excellence.' Each card displays a placeholder avatar icon (user circle icon), player tag, title, and description. Style cards with dark background and red accent border. Use CSS Grid or Flexbox for side-by-side desktop layout and stacked mobile layout. Apply scroll-reveal animation using useScrollReveal hook."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render LeadershipTeam component after AboutUs section. Add section id 'leadership' for navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Build Our Mission section with exact copy and What We Offer section listing five offerings as styled feature cards with red icon markers",
+      "acceptanceCriteria": [
+        "Mission section displays the exact provided copy",
+        "What We Offer section lists all five items",
+        "Items use red accent icons or markers",
+        "Both sections animate in on scroll"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/MissionAndOffers.tsx",
+          "operation": "create",
+          "description": "Create MissionAndOffers component containing two subsections. First subsection: 'Our Mission' heading with copy: 'To recruit upcoming talented players, compete at the highest level, build a strong esports brand, and create a supportive but competitive environment.' Second subsection: 'What We Offer' heading with five feature items displayed as cards or icon list: (1) Competitive tournament participation, (2) Skilled and dedicated teammates, (3) Professional leadership, (4) Structured growth opportunities, (5) Positive and active community. Use red icons (checkmark, star, or custom SVG) as bullet markers. Apply scroll-reveal animations to both subsections using useScrollReveal hook."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render MissionAndOffers component after LeadershipTeam section. Add section id 'mission' for navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Build Join LAW HQ section with recruitment heading, exact copy, prominent Apply Now CTA linking to Discord, and aggressive high-contrast styling",
+      "acceptanceCriteria": [
+        "Join section displays the exact provided copy",
+        "'Apply Now' button links to discord.gg/WRadjbztnW and opens in a new tab",
+        "Section has a distinct aggressive visual treatment",
+        "Section is reachable by scrolling from the Hero CTA"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/JoinClan.tsx",
+          "operation": "create",
+          "description": "Create JoinClan component with heading 'We Are Recruiting' and copy: 'We are currently recruiting upcoming skilled players who are passionate about esports and ready to improve, compete, and represent LAW HQ with pride.' Add prominent red CTA button labeled 'Apply Now' linking to https://discord.gg/WRadjbztnW with target='_blank' and rel='noopener noreferrer'. Style section with aggressive high-contrast background treatment using dark overlay, red accent glow, or border frame. Apply scroll-reveal animation."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render JoinClan component after MissionAndOffers section. Add section id 'join' to enable smooth scrolling from Hero CTA button."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Build Discord section with large join button, community description, three roles explanation, 350+ member badge, and placeholder social media icons",
+      "acceptanceCriteria": [
+        "'Join Our Discord' button links correctly to the provided Discord URL and opens in a new tab",
+        "Community description is displayed",
+        "Three roles (Members, Competitive Team, Staff) are listed with descriptions",
+        "350+ Members badge is visible",
+        "Four placeholder social media icon links are present (Twitter/X, YouTube, Instagram, TikTok)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Discord.tsx",
+          "operation": "create",
+          "description": "Create Discord component with section heading 'Discord'. Add large 'Join Our Discord' button linking to https://discord.gg/WRadjbztnW with target='_blank' and rel='noopener noreferrer'. Display description: 'Stay connected with our active community — join chats, scrims, announcements, and tryouts all in one place.' List three roles with descriptions: (1) Members (general community), (2) Competitive Team (active roster players), (3) Staff (clan leadership and moderators). Display static '350+ Members' badge styled with red accent. Add four placeholder social media icon links (Twitter/X, YouTube, Instagram, TikTok) each with href='#'. Style consistently with dark theme and red accents. Apply scroll-reveal animation."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Discord component after JoinClan section. Add section id 'discord' for navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Build sticky top navigation bar with LAW HQ logo, section anchor links, transparent-to-solid scroll transition, and mobile hamburger menu",
+      "acceptanceCriteria": [
+        "Navigation is sticky and visible at the top of the page",
+        "Nav background transitions from transparent to solid dark on scroll",
+        "All section anchor links scroll to the correct sections",
+        "Hamburger menu is present and functional on mobile",
+        "LAW HQ wordmark is displayed on the left"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "create",
+          "description": "Create Navigation component with sticky positioning (position: sticky; top: 0). Display LAW HQ wordmark or logo image (frontend/public/assets/generated/law-hq-logo.dim_400x400.png) on the left. Add anchor links to sections: Home (#), About (#about), Leadership (#leadership), Mission (#mission), Join (#join), Discord (#discord). Implement scroll event listener to detect scroll position and toggle background from transparent to solid dark. Add mobile hamburger menu toggle button that reveals/hides nav links on small screens. Style with dark theme, red accent on active links, and smooth transitions. Use z-index to keep nav above other content."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Navigation component at the top of the main layout, before all sections. Ensure Navigation is positioned to overlay Hero section transparently and become solid on scroll."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Build footer with LAW HQ name, tagline, placeholder social media icons, and copyright line styled in black and red theme",
+      "acceptanceCriteria": [
+        "Footer is present at the bottom of the page",
+        "LAW HQ name and tagline are displayed",
+        "Placeholder social media icons are present",
+        "Copyright line reads '© 2025 LAW HQ. All rights reserved.'"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create Footer component displaying 'LAW HQ' name in bold, tagline 'Loyalty. Ambition. Winning.', four placeholder social media icon links (Twitter/X, YouTube, Instagram, TikTok) each with href='#', and copyright line: '© 2025 LAW HQ. All rights reserved.' Style with dark background, red accent borders or dividers, and light text. Layout should be centered or flex-based for clean presentation."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Footer component at the bottom of the main layout, after all sections."
+        }
+      ]
+    }
+  ]
+}
